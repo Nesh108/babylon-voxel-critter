@@ -22,7 +22,6 @@ let goodRabbitMesh;
 let goodRabbitEid;
 
 CritterCreator.create_mesh_from_image('./rabbit.png', goodRabbitScale, function(mesh){
-	// Tell Noa to create an instance of the mesh
 	goodRabbitMesh = mesh;
 	mesh.rotation = goodRabbitRotation;
 	// Usage: entities.add( pos, w, h, mesh, meshOffset, doPhysics, shadow
@@ -39,7 +38,6 @@ let evilRabbitMesh;
 let evilRabbitEid;
 
 CritterCreator.create_mesh_from_hash(evilRabbitHash, evilRabbitScale, function(mesh){
-	// Tell Noa to create an instance of the mesh
 	evilRabbitMesh = mesh;
 	mesh.rotation = evilRabbitRotation;
 	// Usage: entities.add( pos, w, h, mesh, meshOffset, doPhysics, shadow
@@ -47,7 +45,7 @@ CritterCreator.create_mesh_from_hash(evilRabbitHash, evilRabbitScale, function(m
 });
 
 ///////////////////////////////////////////////
-////////// The rest of the world
+////////// The rest of the world creation
 ///////////////////////////////////////////////
 
 
